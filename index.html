@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+</head>
+<body>
+        <div class="container">
+          <header class="header">
+        
+            <h1 id="title" class="text-center">Employee Satisfaction Survey</h1>
+              <p id="description">Thank you for taking the time to answer!</p>
+            </header>
+            
+            
+          <form id="survey-form">
+              <div class="form-group">
+                <label id="name-label" for="name"><b>Name</b></label><br>
+                 <input 
+                   id="name"
+                   name="name"
+                   type="text"
+                   class="form-control"
+                   placeholder="Enter your name"
+                   required/>
+            </div>
+          <div class="form-group"> 
+            <label id="email-label" for="email"><b>Email</b></label><br>
+            <input id="email"
+                   name="email"
+                   type="email"
+                   class="form-control"
+                   placeholder="Enter your email"
+                   required/>
+              </div>
+           <div class="form-group">
+             <label id="number-label" for="number-label"><b>Age</b></label><br>
+                <input id="number"
+                       name="age"
+                       type="number"
+                       min="18"
+                       max="90"
+                       class="form-control"
+                       placeholder="Age"
+                       required/>
+              </div>
+              
+            <div class="form-group">
+              <p><b>How long have you worked here?</b></p>
+              <select id="dropdown" class="form-control" name="worked-years" required>
+                <option value="junior">Less than 5 years</option>
+                <option value="middle">6-10 years</option>
+                <option value="senior">11-20 years</option>
+                <option value="forever">Almost forever</option>
+              </select>
+              </div>
+              
+              <div class="form-group">
+                <p><b>Which one of these is your favorite?</b></p>
+                <label>
+                  <input
+                     name="favorite"
+                     value="ballet"
+                     type="radio"
+                     class="input-radio"
+                         checked/>Swan Lake</label><br>
+                
+                   <label>
+                  <input
+                     name="favorite"
+                     value="opera"
+                     type="radio"
+                     class="input-radio"
+                         checked/>Don Giovanni</label><br>
+                 <label>
+                  <input
+                     name="favorite"
+                     value="musical"
+                     type="radio"
+                     class="input-radio"
+                         checked/>Les Miserables</label></div>
+                
+                <div class="form-group">
+                  <p><b>What do you like most about your work environment?</b>
+                    <span class="clue">(Check all that apply)</span></p>
+                    <label>
+                      <input 
+                          name="prefer"
+                          value="repertoire"
+                          type="checkbox"
+                          class="input-checkbox"/>Repertoire</label>
+                  <label><br>
+                      <input 
+                          name="prefer"
+                          value="vacation"
+                          type="checkbox"
+                             class="input-checkbox"/>Long vacation</label>
+                  <label><br>
+                      <input 
+                          name="prefer"
+                          value="coworkers"
+                          type="checkbox"
+                             class="input-checkbox"/>Friendly co-workers</label>
+                  <label><br>
+                      <input 
+                          name="prefer"
+                          value="salary"
+                          type="checkbox"
+                             class="input-checkbox"/>Salary</label><br>
+                  <label>
+                      <input 
+                          name="prefer"
+                          value="challenges"
+                          type="checkbox"
+                             class="input-checkbox"/>Ability to grow</label>
+                  <label><br>
+                      <input 
+                          name="prefer"
+                          value="other"
+                          type="checkbox"
+                             class="input-checkbox"/>Excellent work conditions</label>
+                </div>
+                
+                <div class="form-group">
+                  <p><b>Any comments or suggestions?</b></p>
+                  <textarea
+                            id="comments"
+                            class="input-textarea"
+                            name="comment"
+                            placeholder="Enter your comment here..."
+                        ></textarea>
+            </div>
+                
+                <div class="btn-holder">
+                  <button type="submit" id="submit" class="btn btn-5 hover-border"><span><b>Submit</b></span></button>
+                </div>
+            </form>
+           
+          
+          </div>
+                
+        </body>
+</html>
